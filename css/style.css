@@ -297,4 +297,26 @@ body {
     width: 75px;
     height: 75px;
   }
+  .home .couple img {
+    width: 80%;
+  }
+}
+/* phone size tiny */
+@media (max-width: 350px) {
+  html {
+    font-size: 40%;
+  }
+
+  .simply-countdown > .simply-section {
+    padding: 30px;
+    margin: 2px;
+  }
+  .rounded-circle,
+  .float-end {
+    width: 65px;
+    height: 65px;
+  }
+  .home .couple img {
+    width: 60%;
+  }
 }
