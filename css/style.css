@@ -297,9 +297,6 @@ body {
     width: 75px;
     height: 75px;
   }
-  .home .couple img {
-    width: 80%;
-  }
 }
 /* phone size tiny */
 @media (max-width: 350px) {
@@ -315,8 +312,5 @@ body {
   .float-end {
     width: 65px;
     height: 65px;
-  }
-  .home .couple img {
-    width: 60%;
   }
 }
