@@ -457,6 +457,7 @@ body {
     width: 75px;
     height: 75px;
   }
+<<<<<<< HEAD
   .sticky-top {
     overflow: hidden;
   }
@@ -475,6 +476,8 @@ body {
   .timeline li .timeline-panel::after {
     top: 31px;
   }
+=======
+>>>>>>> dda688f1ddff1304de27296daeb0aa01a250477e
 }
 /* phone size tiny */
 @media (max-width: 350px) {
@@ -491,8 +494,11 @@ body {
     width: 65px;
     height: 65px;
   }
+<<<<<<< HEAD
   .timeline li .timeline-image {
     width: 60px;
     height: 60px;
   }
+=======
+>>>>>>> dda688f1ddff1304de27296daeb0aa01a250477e
 }
