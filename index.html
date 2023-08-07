@@ -219,6 +219,174 @@
       </div>
     </section>
 
+    <section class="story" id="story">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <span>bagaimana cinta kami bersemi</span>
+            <h2>Cerita Kami</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+              reiciendis enim velit itaque nostrum laudantium.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <ul class="timeline">
+              <li>
+                <div
+                  class="timeline-image"
+                  style="
+                    background-image: url(https://picsum.photos/300/300);
+                  "></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3>Pertama Bertemu</h3>
+                    <span>1 April 2015</span>
+                  </div>
+                  <div class="timeline-body">
+                    <p>
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Quam repellendus nisi ducimus possimus. Dicta, amet.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div
+                  class="timeline-image"
+                  style="
+                    background-image: url(https://picsum.photos/301/301);
+                  "></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3>Mulai Serius</h3>
+                    <span>1 April 2017</span>
+                  </div>
+                  <div class="timeline-body">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Veniam reiciendis, ut nulla nobis temporibus commodi!
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div
+                  class="timeline-image"
+                  style="
+                    background-image: url(https://picsum.photos/302/302);
+                  "></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3>Tunangan</h3>
+                    <span>1 April 2020</span>
+                  </div>
+                  <div class="timeline-body">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Dolores totam optio deserunt minima ut quidem nostrum
+                      iure. Porro, obcaecati ut!
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="galery" id="galery">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <span>memori kisah kami</span>
+            <h2>Galery Foto</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatum, repellendus?
+            </p>
+          </div>
+        </div>
+        <div
+          class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1 justify-content-center">
+          <div class="col mt-3">
+            <a
+              href="image/galery/1.jpg"
+              data-toggle="lightbox"
+              data-caption="Aqua and Rubi 1"
+              data-gallery="my-galery">
+              <img
+                src="image/galery/thumbnail/1.jpg"
+                alt="Aqua & Rubi 1"
+                class="img-fluid w-100 rounded" />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a
+              href="image/galery/2.jpg"
+              data-toggle="lightbox"
+              data-caption="Aqua and Rubi 2"
+              data-gallery="my-galery">
+              <img
+                src="image/galery/Thumbnail/2.jpg"
+                alt="Aqua & Rubi 2"
+                class="img-fluid w-100 rounded" />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a
+              href="image/galery/3.jpg"
+              data-toggle="lightbox"
+              data-caption="Aqua and Rubi 3"
+              data-gallery="my-galery">
+              <img
+                src="image/galery/thumbnail/3.jpg"
+                alt="Aqua & Rubi 3"
+                class="img-fluid w-100 rounded" />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a
+              href="image/galery/4.jpg"
+              data-toggle="lightbox"
+              data-caption="Aqua and Rubi 4"
+              data-gallery="my-galery">
+              <img
+                src="image/galery/thumbnail/4.jpg"
+                alt="Aqua & Rubi 4"
+                class="img-fluid w-100 rounded" />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a
+              href="image/galery/5.jpg"
+              data-toggle="lightbox"
+              data-caption="Aqua and Rubi 5"
+              data-gallery="my-galery">
+              <img
+                src="image/galery/thumbnail/5.jpg"
+                alt="Aqua & Rubi 5"
+                class="img-fluid w-100 rounded" />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a
+              href="image/galery/6.jpg"
+              data-toggle="lightbox"
+              data-caption="Aqua and Rubi 5"
+              data-gallery="my-galery">
+              <img
+                src="image/galery/thumbnail/6.jpg"
+                alt="Aqua & Rubi 6"
+                class="img-fluid w-100 rounded" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
     <script>
       simplyCountdown(".simply-countdown", {
         year: 2023, // required
@@ -249,9 +417,23 @@
       });
     </script>
 
+    <script>
+      const stickyTop = document.querySelector(".sticky-top");
+      const offCanvas = document.querySelector(".offcanvas");
+
+      offCanvas.addEventListener("show.bs.offcanvas", function () {
+        stickyTop.style.overflow = "visible";
+      });
+      offCanvas.addEventListener("hidden.bs.offcanvas", function () {
+        stickyTop.style.overflow = "hidden";
+      });
+    </script>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
       crossorigin="anonymous"></script>
+    <!-- Lightbox -->
+    <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
   </body>
 </html>
